@@ -1,6 +1,10 @@
-<h1>Stupid coaching</h1>
+<h1 class="m-5">Stupid coaching</h1>
 
-<p><%= @question %></p>
-<p><%= @answer %></p>
+<div class="container m-5">
+  <p><strong>You:</strong> <%= @question %></p>
+  <p><strong>Coach:</strong> <%= @answer %></p>
+</div>
 
-<%= link_to "Ask another question", ask_path %>
+<div class="container m-5">
+  <%= link_to "Ask another question", ask_path, class: "btn btn-primary" %>
+</div>
